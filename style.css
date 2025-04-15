@@ -64,14 +64,34 @@ header a:hover {
 .hidden {
   display: none;
 }
-
-#login-form {
+.login-container {
   background-color: #fff;
   border: 1px solid #ccc;
   padding: 20px;
   width: 300px;
   margin: 20px auto;
   border-radius: 5px;
+}
+input[type="text"], input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #5e5ecf; /* Blue-violet border */
+  border-radius: 5px;
+}
+button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5e5ecf; /* Blue-violet background for button */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4c4cbe; /* Darker shade on hover */
 }
 
 #login-form h2 {
@@ -89,7 +109,7 @@ header a:hover {
   font-size: 16px;
 }
 
-#login-form button {
+.login-form-button-container {
   margin-top: 15px;
   padding: 10px 15px;
   background-color: #9370DB;
@@ -202,9 +222,6 @@ section p {
 .btn:hover {
   background-color: #722ba1;
 }
-
-
-  
 
 
   
