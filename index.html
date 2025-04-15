@@ -1,48 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <p>Добредојдовте! Welcome!</p>
+  <html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Ticket</title>
   <title>Travel Tales</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YYHFE0V5L7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YYHFE0V5L7');
-</script>
 </head>
 <body>
 <!-- Your page content -->
   <header>
+    
     <h1>TravelTale</h1>
     <a href="home">Home</a>
     <a href="about">About Us</a>
     <a href="destination">Destination</a>
     <a href="contact">Contact</a>
+    <a href="book-btn">Book</a>
   </header>
-  
-  <div id="login-form">
-    <h2>Log In</h2>
-    <input type="text" placeholder="username">
-    <input type="password" placeholder="password">
-    <button id="submit-btn">Submit</button>
-  </div>
-
-  <div id="booking-form">
-    <h2>Book</h2>
-    <input type="name" placeholder="Your Name">
-    <input type="destination" placeholder="Destination">
-    <input type="email or phone number" placeholder="Email or phone number">
-    <button id="submit-btn">Submit</button>
-  </div>
+  <h2>Welcome to Travel Tales</h2>
+  <div class="login-container">
+    <h2>Login to Travel Tales</h2>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="message" class="message"></div>
+</div>
 
   <div class="main-page">
-    <h2>Welcome to Travel Tales</h2>
+
     <p>Travel to any corner of the world</p>
     <p>Find travel perfections with the wisdom of experts</p>
     <p>We can build the holidays of your dreams and make them a reality</p>
@@ -51,8 +43,8 @@
 
   <section id="summer">
     <h2>Summer Vacations</h2>
-    <img src = "src/aerial-shot-sea.jpg">
     <h3>Book your Bali Adventure Today</h3>
+    <img src = "https://img.freepik.com/premium-photo/ancient-pura-ulun-danu-bratan-besakih-famous-hindu-temple-tourist-bali-island-sunrise_1044788-17619.jpg?w=740">
     <p>
       Picture yourself in Bali, where every sunrise paints the sky with colors you’ve only dreamed of.
       Stroll along pristine beaches, savor delicious local dishes, and immerse yourself in the warm hospitality of the Balinese people.
@@ -72,18 +64,18 @@
 
   <section id="winter">
     <h2>Winter Vacations</h2>
-
+    <img src ="https://img.freepik.com/free-photo/beautiful-village-snow-covered-mountain_181624-4248.jpg?t=st=1743329159~exp=1743332759~hmac=6d783dfd60fcbf6454f695cd548b787da179cf53d6c7c8007836c4631bd11ca8&w=1380">
     <h3>4 Days in Bulgaria</h3>
     <p>
-      We’re going to do a special tour around Bulgaria, Bansko. You’ll learn how to ski and snowboard.
-      Allow us to make you the best four days you could ever experience this year!
+      We’re going to do a special tour around Bulgaria, Bansko. You’ll learn how to ski and snowboard. 
+      Allow us to make the best four days you could ever experience this year!
     </p>
   </section>
 
   <section id="best-sellers">
     <h2>Best Sellers</h2>
-
     <h3>Visiting Paris</h3>
+    <img src="https://img.freepik.com/free-photo/beautiful-wide-shot-eiffel-tower-paris-surrounded-by-water-with-ships-colorful-sky_181624-5118.jpg?t=st=1742760585~exp=1742764185~hmac=41f95da257ef307a9422fa1dd435f587b7505dff9fceda0c34254ee90ec4dd7d&w=1380">
     <p>
       Allow us to make your dream come true! We’re doing a 5-day trip to Paris, visiting the Eiffel Tower
       and other famous places in Paris, France. If you’re a loyal customer, you can check the sales link on
@@ -94,6 +86,5 @@
   <script src="script.js"></script>
 </body>
 </html>
-
 
 
