@@ -1,8 +1,16 @@
-document.getElementById("login-btn").addEventListener("click", function() {
-  document.getElementById("login-form").classList.toggle("hidden");
-});
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting
 
-document.getElementById("book-btn").addEventListener("click", function() {
-  document.getElementById("booking-form").classList.toggle("hidden");
+  // Get the values from the input fields
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+  // Simple validation (just checking if fields are not empty)
+  if (username && password) {
+      document.getElementById('message').innerText = 'Login successfully!';
+  } else {
+      document.getElementById('message').innerText = 'Please enter both username and password.';
+      document.getElementById('message').style.color = 'red';
+  }
 });
 
