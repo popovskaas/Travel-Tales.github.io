@@ -1,16 +1,227 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the form from submitting
+body {
+  font-family: Arial, sans-serif;
+  background-color: #b1b1cf;
+  color: #333;
+  padding: 30px;
+  text-align: center;
+}
 
-  // Get the values from the input fields
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
+header {
+  background-color: #6A5ACD;
+  padding: 15px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #6A5ACD 0%, #4B0082 100%);
+  padding: 20px 0;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
 
-  // Simple validation (just checking if fields are not empty)
-  if (username && password) {
-      document.getElementById('message').innerText = 'Login successfully!';
-  } else {
-      document.getElementById('message').innerText = 'Please enter both username and password.';
-      document.getElementById('message').style.color = 'red';
-  }
-});
+#summer img{
+  width: 250px;
+  height: 250px;
+  display: block;
+  transform: translateZ(-2px)
 
+}
+
+#best-sellers img{
+  width: 250px;
+  height: 250px
+  display:  block;;
+  transform: translateX(-2px)
+}
+
+#winter img{
+  width:250px;
+  heigh:250px;
+  display:  block;
+  transform: translateY(-2px)
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: white;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  margin:  15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+.login-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+input[type="text"], input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #5e5ecf; /* Blue-violet border */
+  border-radius: 5px;
+}
+button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5e5ecf; /* Blue-violet background for button */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4c4cbe; /* Darker shade on hover */
+}
+
+#login-form h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+#login-form input {
+  display: block;
+  width: 90%;
+  padding: 8px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.login-form-button-container {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #9370DB;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#login-form button:hover {
+  background-color: #8A2BE2;
+  transform: translateY(-2px)
+}
+
+#book-btn{
+  background-color: #572357;
+  color:white;
+  padding: 10px 20px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  font size: 16px;
+  font-weight:bold;
+  margin-top: 20px;
+}
+
+#book-btn:hover{
+  background-color: #310731;
+}
+
+#booking-form{
+  display:none;
+  background-color: white;
+  padding:15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 20px;
+  text-align: left;
+}
+
+#booking-form button{
+  background-color: #420942;
+  color:white;
+  padding: 10px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  font size: 16px;
+  width:100%
+  margin-top: 20px;
+}
+
+.hidden{display:none}
+#booking-form button:hover{
+  background-color: #310731;
+}
+.main-page {
+  margin-bottom: 40px;
+}
+
+.main-page h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.main-page p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+section {
+  margin: 40px 0;
+  text-align: left;
+}
+
+section h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4B0082;
+}
+
+section h3 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #4B0082;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 20px 20px;
+  text-align: justify;
+}
+
+
+.btn {
+  background-color: #872fa4;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.btn:hover {
+  background-color: #722ba1;
+}
+
+
+  
