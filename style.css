@@ -20,27 +20,15 @@ header {
   border-radius: 10px;
 }
 
-#summer img{
+img{
   width: 250px;
   height: 250px;
   display: block;
+  margin: 20px auto;
   transform: translateZ(-2px)
 
 }
 
-#best-sellers img{
-  width: 250px;
-  height: 250px
-  display:  block;;
-  transform: translateX(-2px)
-}
-
-#winter img{
-  width:250px;
-  heigh:250px;
-  display:  block;
-  transform: translateY(-2px)
-}
 
 header h1 {
   font-size: 28px;
